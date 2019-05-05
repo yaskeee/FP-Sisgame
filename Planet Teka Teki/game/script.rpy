@@ -350,6 +350,9 @@ label start:
 
     label planet12:
 
+        show planet12
+        with fade
+
         b "Kalian mencoba terhubung dengan komputer Kubah Laboratorium melalui DATA PAD"
         b "Sebuah peringatan muncul..."
         "\"Serangan Virus! Semua data komputer diacak-acak! Sistem pengamanan laboratorium tidak bisa berjalan! Kebocoran radiasi!\""
@@ -463,6 +466,9 @@ label start:
     #label END-------------------------------------
 
     label moon15:
+
+        show bulan15
+        with fade
 
         b "Sebuah jam penghitung mundur tampil di monitor komputer."
         b "Dalam 60 detik, reaktor akan meledak!"
@@ -649,7 +655,8 @@ label start:
         b "Kalian menuliskan \"Virus Alien\" pada program pencari di DATA PAD."
         b "Setelah beberapa saat, inilah yang ditampilkan di layar."
 
-        #show gambra virus
+        show roket20
+        with fade
 
         b "Kalian melihat layar komputer."
         b "Kalian mengamati pola-pola virus dalam tulisan alien."
@@ -857,6 +864,9 @@ label start:
 
     label star27:
 
+        show star27
+        with fade
+
         b "Kalian melewati landasan luncur dan masuk ke Kubah Laboratorium,"
         b "Ruang pengunci udaranya masih tertutup. Pasti masih ada udara di dalamnya."
         b "Kemudian, kalian melihat pesawat alien kecil."
@@ -929,6 +939,9 @@ label start:
 
     label ion29:
 
+        show ion29
+        with fade
+
         b "Itu kode yang salah."
         b "Ketika kalian menekan 6, panah pertama sedang menunjuk ke angka 3."
         b "Panah berputar lebih cepat."
@@ -965,6 +978,9 @@ label start:
     #label END-------------------------------------
 
     label planet30:
+
+        show planet30
+        with fade
 
         b "Kalian baru saja memilih kombinasi yang salah!"
         b "Ruang pengunci udara mulai dipenuhi gas berwarna ungu."
@@ -1126,6 +1142,9 @@ label start:
 
         #CHECKPOINT
 
+        show star34
+        with fade
+
         b "Pesan lain dari alien muncul di monitor Kubah Laboratorium."
         b "Kalian menggunakan program penerjemah di DATA PAD..."
 
@@ -1208,6 +1227,9 @@ label start:
 
     label ion37:
 
+        show ion37
+        with fade
+
         b "Kalian meminta perbendaharaan kode dari DATA PAD."
         b "Kode itu seharusnya berupa dua digit angka, misalnya 66."
         b "Akan tetapi, bukannya dua digit angka yang keluar di layar, melainkan dua buah pemintal."
@@ -1238,6 +1260,9 @@ label start:
     #label END-------------------------------------
 
     label moon37:
+
+        show bulan37
+        with fade
 
         b "Kalian mengunggah virus Kronos ke komputer Kubah Laboratorium."
         b "Kalian telah memilih virus yang tepat."
@@ -1287,6 +1312,9 @@ label start:
     #label END-------------------------------------
 
     label roket38:
+
+        show star38
+        with fade
 
         b "Kalian menekan tombol masuk di ruangan pengunci udara."
         b "Sebuah pesan muncul di layar."
@@ -1422,6 +1450,9 @@ label start:
 
     label roket42:
 
+        show roket42
+        with fade
+
         b "Pintu ruang pengunci udara membuka, kalian segera masuk ke dalam"
         b "Pintu luar pun menutup."
         b "Di dalam, kalian menekan tombol \"OPERASIKAN\", Namun tidak ada yang terjadi."
@@ -1446,6 +1477,9 @@ label start:
     #label END-------------------------------------
 
     label planet42:
+
+        show planet42
+        with fade
 
         b "Kalian memilih tindakan yang tepat"
         b "Menyalakan ulang komputer reaktor adalah langkah terbaik yang bisa dilakukan."
