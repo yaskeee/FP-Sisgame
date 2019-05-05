@@ -35,7 +35,7 @@ label start:
     scene background
     with fade
 
-    show star-32
+    show star32
 
     "\"Selamat datang di Planet Teka-Teki\""
 
@@ -59,7 +59,7 @@ label start:
 
     label startpage:
 
-        show star-4
+        show star4
 
         b "Bersiap untuk mendarat. Pesawat antariksa kalian siap untuk mendarat di Pangkalan Alpha di Planet Teka-teki."
         b "Kalian dikirim untuk memasok barang-barang kebutuhan dan memperbarui sistem komputer di pangkalan tersebut."
@@ -87,7 +87,7 @@ label start:
         b "Labu kimia mendidih dan tabung percobaan pecah."
         b "Pintu menuju reaktor nuklir terbuka dan berayun tak beraturan. Monitor komputer dipenuhi dengan simbol dan tanda-tanda aneh."
 
-        show roket-4
+        show roket4
         with fade
         b "Kemudian kalian menemukan sebuah pesan di papan tulis..."
 
@@ -95,6 +95,9 @@ label start:
     #roket4 END------------------------------------
 
     label planet4:
+
+        show planet4
+        with fade
 
         b "Kalian mengikuti arah yang ditunjukkan DATA PAD. Jalur itu membawa kalian melewati ruang mekanik."
         b "Kalian berhenti sebentar untuk mengambil sebuah gulungan besar kabel listrik."
@@ -168,7 +171,7 @@ label start:
     label ion7:
 
         b "Kalian mencentang kotak BESAR. DATA PAD kalain mulai terasa panas. Asap muncul  dari balik tombol-tombolnya! Sebuah pesan muncul di layar!"
-        show ion-7
+        show ion7
         with fade
         "\"GAGAL MENGOLAH DATA! GAGAL MENGOLAH DATA!\""
         b "Demgan cepat kalian menghapus tanda centang di kotak itu dan mengulannginya lagi."
@@ -216,7 +219,7 @@ label start:
 
         b "Kalian melangkah melewati pengunci udara, menuju ke Kubah Habitat dan melihat kerusakan yang terjadi."
         b "Tampaknya, sesuatu telah memakan meja dan kursi."
-        show plannet-8
+        show planet8
         with fade
         b "Kalian menggunakan pensil khusus untuk membuat turus di DATA PAD kalian."
         b "Kalian memasukkan seluruh jumlahnya di kolom total."
@@ -230,6 +233,9 @@ label start:
     #label END-------------------------------------
 
     label star8:
+
+        show star8
+        with fade
 
         b "Benar! Pintu brankas terbuka lebar. Kalian menemukan stik data di dalamnya."
         b "Kalian mencolokannya ke DATA PAD untuk memindahkan data di dalamnya."
@@ -250,7 +256,8 @@ label start:
         b "Kalian memprogram DATA PAD untuk menerjemahkan simbol-simbol itu."
         b "Tabel terjemahan yang dihasilkan adalah sebagai berikut..."
 
-        #show tabel
+        show ion9
+        with fade
 
         b "DATA PAD menerjemahkan kata pertama..."
         "\"P A S U K A N\""
@@ -309,7 +316,7 @@ label start:
         play music "sounds/space chill.mp3" fadeout 1.0 fadein 1.0
 
         b "Pesawat antariksa kalian berhasil mendarat di area landasan. Denah di layar komputer memperlihatkan tampilan pangkalan."
-        show bulan-11
+        show bulan11
         with fade
         b "Lampu darurat berwarna merah berkedip-kedip di sebelah Kubah Habitat, Kubah Laboratorium, dan Kubah Komunkasi."
         b "Lampu peringatan kuning menyala, menunjukkan bahwa temperatur suhu di Biodome sedang meninggi! Kalian bergegas memakai pakaian luar angkasa."
@@ -376,6 +383,9 @@ label start:
 
     label moon13:
 
+        show bulan13
+        with fade
+
         b "PASUKAN PENDAUR ULANG LOGAM"
         b "Kedengarannya seperti pesawat tempur alien! Akan tetapi, pasukan itu segera bergerak tanpa kendali."
         b "Alien pengunyah logam akan segera menghancurkan seluruh Kubah Habitat jika hubungan listrik yang kalian buat gagal."
@@ -395,7 +405,7 @@ label start:
 
     label roket14:
 
-        show bulan-11
+        show roket14
         with fade
 
         b "Pangkalan Alpha mana yang akan kamu selidiki?"
@@ -501,7 +511,8 @@ label start:
         b "Beberapa jenis logam dapat tertarik oleh magnet! Kalian mencari di DATA PAD lebih banyak informasi tentang magnet dan logam."
         b "Kalian menemukan data yang disajikan dalam bentuk diagram VENN."
 
-        #show gambarg diagram VENN
+        show star17
+        with fade
 
         b "Kalian memutuskan untuk melakukan sebuah percobaan."
         b "Baju antariksa kalian dilengkapi dengan sepatu bot magnet yang membantu kalian menempel di sebuah permukaan benda di luar angkasa."
@@ -531,6 +542,9 @@ label start:
     #label END-------------------------------------
 
     label roket18:
+
+        show roket18
+        with fade
 
         b "Kalian mengikuti arah yang ditunjukkan DATAPAD."
         b "Sepertinya, rute yangdiberikan membawa kalian ke bagian belakang Pangkalan Alpha. Dan, tampaknya itu tidak benar."
@@ -651,6 +665,9 @@ label start:
 
     label planet20:
 
+        show planet20
+        with fade
+
         b "Tidak Perlu takut. Ini adalah petuaangan yang menasyikkan dan bantuan akan selalu ada untuk kalian."
         b "Jika kalian terjebak atau berada dalam bahaya, penolong misterius akan menuntun dan menjaga kalian agar tetap aman."
         b "Ikuti saja petunjuknya, satu demi satu, dan lihat seberapa jauh perjalanan yang bisa kalian tempuh."
@@ -670,7 +687,8 @@ label start:
         b "Data itu terlihat seperti bahasa yang tidak karuan dan tidak bermakna."
         b "Kemudian, kalian menjalankan program penerjemah."
 
-        # show gambar pesan
+        show star21
+        with fade
 
         b "Ternyata itu sebuah panduan pengguna!"
         b "Rupanya, secara tidak sengaja pasukan pendaur ulang telah mendarat di Pangkalan Alpha."
@@ -714,7 +732,8 @@ label start:
         b "Brankas itu tidak terbuat dari logam, jadi para alien tidak bisa merusaknya."
         b "Kalian membaca keterangan tambahan dari Amy di DATA PAD..."
 
-        #show data pad Amy
+        show planet22
+        with fade
 
         b "Keypad di brankas hanya terdiri atas angka-angka dan garis miring."
         b "Kalian harus memasukkan tanggal lahir Amy dalam format angka."
@@ -729,7 +748,7 @@ label start:
 
     label star23:
 
-        show star-23
+        show star23
         with fade
 
         b "Betul sekali. Ada 14 buah sendok logam yang rusak."
@@ -745,7 +764,7 @@ label start:
         b "DATA PAD kalian segera membuat panggilan."
         b "DATA PAD Vineeta menjawab."
         b "Awalnya, kalian melihat ruang Kubah Laboratorium di layar DATA PAD, tapi kemudian sebuah pola alien aneh muncul di layar dan pola itu mulai berputar."
-        show ion-23
+        show ion23
         with fade
         b "Kalian merasa pusing. Kalian juga juga tidak bisa berhenti melihatnya."
         b "Kalian mulai mengantuk."
@@ -785,7 +804,8 @@ label start:
         b "Kalian mendekatkan lensa ke salah satu sendok yang rusak."
         b "Inilah yang kalian lihat..."
 
-        #show gambar mikroskop
+        show roket26
+        with fade
 
         b "Terlihat sendok itu seperti dimakan oleh kerumunan \"serangga\" kecil."
         b "Kalian memfokuskan lensa ke salah satu \"serangga\" dan memperbesar tampilannya."
@@ -853,16 +873,14 @@ label start:
 
     label roket28:
 
-        show roket-28
-        with fade
-
         b "Pisau yang rusak lebih banyak dibandingkan sendok logam yang rusak."
         b "Namun, beberapa benda tidak tidak rusak sama sekali,"
         b "Sungguh membingungkan. Kalian menyusun data dalam bentuk diagram Carroll."
         b "Kalian menyortir data tersebut berdasarkan warna, ukuran, dan bahan."
         b "Sekarang kalian memiliki dua buah tabel hasil penyortiran di DATA PAD."
 
-        #show diagram carroll
+        show roket28
+        with fade
 
         b "Kini, kalian merasa tahu kaitan antara semua benda yang rusak."
         b "DATA PAD meminta kalian untuk mencentang karakterisktik umum yang dimiliki oleh semua benda yang rusak."
@@ -891,8 +909,9 @@ label start:
         b "Sekarang tempat itu kosong, dingin, dan hampa udara."
         b "Kalian melihat layar DATA PAD yang kalian bawa."
 
-        show star-29
+        show star29
         with fade
+
         b "Disitu ditampilkan tabel awak Pangkalan Alpha."
         b "Kalian dapat menghubungi DATA PAD mereka dengan cara mengetuk tanda di sebelah kiri nama mereka."
         b "Kalian mencoba untuk menghubungi komandan stasiun."
@@ -929,7 +948,8 @@ label start:
 
         b "DATA PAD kalian memperlihatkan data frekuensi dalam bentuk diagram batang."
 
-        show roket-30
+        show roket30
+        with fade
 
         b "Kenapa sebagian benda rusak, sementara ada benda-benda lain yang masih utuh?"
         b "Kalian mencoba memahami data yang ada."
@@ -1033,6 +1053,9 @@ label start:
 
     label star32:
 
+        show star32
+        with fade
+
         b "Kalian menyambungkan kabel ke panel surya."
         b "Kemudian, sambil mengulur kabel, kalian kembali lagi ke Kubah Habitat."
         b "Kalian menyambungkan ujung kabel yang lain ke jeruji logam."
@@ -1121,6 +1144,9 @@ label start:
 
     label ion35:
 
+        show ion35
+        with fade
+
         b "Listrik di Kubah Habitat mati"
         b "Pakaian antariksa kalian tidak memiliki cukup tenaga untuk memberi sengatan listrik ke semua alien."
         b "Kalian harus mencari sumber listrik yang lebih besar."
@@ -1157,6 +1183,9 @@ label start:
     #label END-------------------------------------
 
     label star36:
+
+        show star36
+        with fade
 
         b "Kalian menuliskan kata \"METAL\" di DATA PAD."
         b "DATA PAD mulai bergetar. Sinar laser menyorot ke berbagai arah dari layarnya."
@@ -1310,6 +1339,9 @@ label start:
 
     label roket40:
 
+        show roket40
+        with fade
+
         b "Ketika kalian mengamati para alien di kabel tembaga, mereka semua bergerak cepat satu arah"
         b "Mereka mendorong kabel itu kearah kalian, mereka bermaksud menusuk baju antariksa kalian."
         b "Tiba-tiba, sebuah lengan mekanik menggapai dari belakang kalian."
@@ -1353,6 +1385,9 @@ label start:
     #label END-------------------------------------
 
     label moon41:
+
+        show bulan41
+        with fade
 
         b "Ketika kalian memasukkan 3,5 cm, para alien berbalik dan melihat ke lensa kamera."
         b "mereka berkumpul di sendok dan mulai berbaris. Mereka mendekati kalian!"
