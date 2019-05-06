@@ -108,6 +108,9 @@ label start:
 
     label star5:
 
+        show star5
+        with fade
+
         b "Kalian menulis perintah untuk memutar piringan satelit yang masih utuh agar mengarah ke planet Z."
         b "Kemudian, kalian mencoba mengirim sinyal. Namun, tidak ada yang terjadi."
         b "Sebuah tampilan video memperlihatkan adanya gangguan. Robot alien telah menghilang dari kawah!"
@@ -281,6 +284,9 @@ label start:
 
     label roket10:
 
+        show roket10
+        with fade
+
         b "Rhombus menutupi wajah dengan tangan, lalu menggelengkan kepala!"
         b "Periksa kembali tabel itu. Planet X hampir tidak memiliki oksigen sama sekali di atmosfernya."
         b "Berapa banyak oksigen di atmosfer planer Z?"
@@ -345,6 +351,9 @@ label start:
 
     label roket12:
 
+        show roket12
+        with fade
+
         b "Kalian meminta komputer untuk mencari planet yang ukurannya kira-kira sama besar dengan Bumi di antara empat sistem tata surya berplanet delapan"
         b "Ternyata ada satu di setiap sistem tata surya tersebut!"
         b "Untuk membantu menentukan planet mana yang tidak dihuni, kalian meminta agar suhu maksimum dan minimum setiap planet ditampilkan."
@@ -380,6 +389,9 @@ label start:
     #label END-------------------------------------
 
     label ion13:
+
+        show ion13
+        with fade
 
         b "Kalian mendekati ruang pengunci udara di Kubah Komunikasi."
         b " Kalian berencana untuk menghubungi alien yang bertanggung jawab atas kerusakan di Pangkalan Alpha."
@@ -497,6 +509,9 @@ label start:
     #label END-------------------------------------
 
     label roket16:
+
+        show roket16
+        with fade
 
         b "Benar! Planet X dan Z sepertinya paling mirip dengan Bumi. Mungkinkah salah satu di antaranya adalah planet Zorgon?"
         b "Semua makhluk hidup cerdas yang pernah ditemukan bernapas dengan oksigen."
@@ -644,6 +659,9 @@ label start:
 
     label roket19:
 
+        show roket19
+        with fade
+
         m "Saluran telepon anda masih dalam antrean..."
 
         b "Kata mesin penjawab otomastis."
@@ -728,6 +746,9 @@ label start:
     #label END-------------------------------------
 
     label roket22:
+
+        show roke22
+        with fade
 
         b "Kalian menunjuk ke gambar-gambar planet W dan Z yang ada di layar komputer."
         b "Mata Rhombus mulai memancarkan percikan cahaya"
@@ -1123,7 +1144,8 @@ label start:
         b "Bersama-sama, kalian memutuskan menggunakan teleskop pangkalan untuk mencari planet yang diduga paling kuat sebagai planet Zorgon di sistem tata surya."
         b "Komputer menganalisis sepuluh sistem tata surya terdekat dari data teleskop."
 
-        #show analisis komputer
+        show bulan33
+        with fade
 
         b "Kalian mulai membicarakan data planet itu."
         b "Ketika kalian menyebutkan angka yang merupakan modus dari jumlah planet, Rhombus berbunyi nyaring!"
@@ -1245,6 +1267,9 @@ label start:
 
     label planet36:
 
+        show planet36
+        with fade
+
         b "Rhombus terlihat gelisah."
         b "Kepalanya berputar dan dai melompat-lompat! Itu angka yang salah!"
         b "Modus adalah nilai yang paling sering muncul (umum) dalam sebuah himpunan data."
@@ -1326,6 +1351,9 @@ label start:
 
     label star38:
 
+        show star38
+        with fade
+
         b "Kalian memutuskan pembangkit listrik reaktor."
         b "Namun, ternyata itu tidak berpengaruh apapun."
         b "Kilauan radiasi makin membesar!"
@@ -1341,7 +1369,7 @@ label start:
 
     label roket38:
 
-        show star38
+        show roket38
         with fade
 
         b "Kalian menekan tombol masuk di ruangan pengunci udara."
@@ -1465,6 +1493,9 @@ label start:
     #label END-------------------------------------
 
     label ion41:
+
+        show ion41
+        with fade
 
         b "Pintu bagian dalam ruang pengunci udara terbuka."
         b "Kalian dan Rhombus masuk ke dalam Kubah Komunikasi."
