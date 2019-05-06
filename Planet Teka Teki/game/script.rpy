@@ -143,6 +143,9 @@ label start:
 
     label planet6:
 
+        show planet6
+        with fade
+
         b "Panel kontrol memperlihatkan nilai suhu. Kalian dapat mengubah temperatur dengan menekan tombol panah atas dan panah bawah."
         b "Kalian memutuskan untuk menurunkan temperatur hingga minus 5 derajat celcius."
         b "Ini seharusnya akan menghentikan cacing-cacing itu."
@@ -182,6 +185,9 @@ label start:
     #label END-------------------------------------
 
     label moon7:
+
+        show bulan7
+        with fade
 
         b "Kalian mendekati pintu masuk ke Biodome"
         b "Biodome adalah sebuah rumah kaca raksasa di mana para awak Pangkalan Alpha menanam tanaman pangan untuk kebutuhan mereka."
@@ -283,6 +289,9 @@ label start:
     #label END-------------------------------------
 
     label planet10:
+
+        show planet10
+        with fade
 
         b "Kalian memprogram DATA PAD unntuk menganalisis tanah Biodome."
         b "Kalian terkesima ketika layar menampilkan diagram batang yang membandingkan tanah Biodome dengan tanah normal."
@@ -426,6 +435,9 @@ label start:
 
     label planet14:
 
+        show planet14
+        with fade
+
         b "Setelah memiliki data air dan tanah, kalian mulai memikirkan teori yang bisa menjelaskan apa yang terjadi."
         b "Kalian menyusun hipotesis kalian dalam bentuk diagram alur di DATA PAD..."
         b "bagaimana hasil hipotesis kalian tentang alien pendaur ulang?"
@@ -536,7 +548,8 @@ label start:
 
     label ion17:
 
-        #show gambar
+        show ion17
+        with fade
 
         b "Kalian berpikir temperatur di dalam Biodome mencapai 45 derejat celcius."
         b "Ini lebih panas dari suhu yang seharusnya."
@@ -588,6 +601,9 @@ label start:
     #label END-------------------------------------
 
     label star19:
+
+        show star19
+        with fade
 
         b "Kemudian, kalian melihat sesuatu yang aneh di tengah-tengah Biodome."
         b "Ternyata, itu sebuah pesawat antariksa."
@@ -837,6 +853,9 @@ label start:
     label planet27:
         play music "sounds/space chill.mp3" fadeout 1.0 fadein 1.0
 
+        show planet27
+        with fade
+
         b "Tidak---itu tidak benar!"
         b "Salah satu lebah raksasa meninggalkan bunga tomat."
         b "Dia mengarah ke kalian!"
@@ -997,6 +1016,9 @@ label start:
 
     label star31:
 
+        show star31
+        with fade
+
         b "Kalian memutuskan untuk menganalisis tanah dan air di Biodome."
         b "Kalian harus mencari tahu apa yang sebenarnya terjadi."
         b "Pertama-tama, kalian mengambil sampel air dari semprotan air."
@@ -1027,6 +1049,9 @@ label start:
     label roket32:
 
         #CHECKPOINT
+
+        show roket32
+        with fade
 
         b "Temperatur turun hingga minus 5 derajat celcius."
         b "Cacing-cacing itu berhenti bergerak."
@@ -1122,6 +1147,9 @@ label start:
     #label END-------------------------------------
 
     label planet34:
+
+         show planet34
+         with fade
 
         b "Kalian pikir suhunya hanya 4,5 derajat Celcius."
         b "Kalian lalu menyalakan pemanas di dalam pakaian antariksa kalian."
@@ -1341,7 +1369,8 @@ label start:
         b " Kalian menggunakan perekam video DATA PAD untuk merekam pertumbuhan sebuah tomat."
         b "Kalian memutarnya kembali dan inilah hasilnya..."
 
-        # show tomat
+        show ion39
+        with fade
 
         b " Berapa detik yang dibutuhkan tomat untuk matang dari kuning ke merah?"
 
@@ -1353,6 +1382,9 @@ label start:
     #label END-------------------------------------
 
     label moon39:
+
+        show bulan39
+        with fade
 
         b "Tidak, ada lebih banyak pupuk alien dalam air itu!"
         b "Tiba-tiba kekuatan semprotan air meningkat."
@@ -1384,6 +1416,9 @@ label start:
     #label END-------------------------------------
 
     label planet40:
+
+        show planet40
+        with fade
 
         b "Kalian memutuskan untuk memeriksa tananh dan mencari tahu penyebab kenapa tanah itu memiliki lebih sedikit cacing."
         b "Kalian membungkuk dan mengambil segenggam tanah."
@@ -1498,6 +1533,9 @@ label start:
 
     label ion43:
 
+        show ion43
+        with fade
+
         b "Dengan hati-hati kalian mengambil sedikit sampel tanah"
         b "Kalian menggunakan sebuah sendok panjang."
         b "Kalian benar. Tanah ini dipenuhi oleh cacing!"
@@ -1510,6 +1548,9 @@ label start:
 
     label star43:
         play music "sounds/space chill.mp3" fadeout 1.0 fadein 1.0
+
+        show star43
+        with fade
 
         b "Namun, apa yang selanjutnya terjadi setelah pertumbuhan alien-alien itu berhenti!"
         b "Hei, itu adalah sebuah pesawat antariksa."
