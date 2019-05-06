@@ -1601,6 +1601,9 @@ label start:
 
         #"END GAME"
 
+        show ending
+        with fade
+
         b "Di dalam Kubah Habitat, para robot mikro mulai memperbaiki kerusakan yang sebelumnya mereka buat."
         b "Di Biodome, tanaman antariksa mulai mengecil."
         b "Cacing-cacing melepaskan nutrisi kembali ke dalam tanah."
