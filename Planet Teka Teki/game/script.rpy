@@ -11,9 +11,17 @@ define z = Character("Zapie")
 
 
 
+
+
 # The game starts here.
 
 label start:
+
+    #variabel-----------------
+    $ data1 = 0
+    $ data2 = 0
+    $ data3 = 0
+    $ data4 = 0
 
     play music "sounds/space chill.mp3" fadeout 1.0 fadein 1.0
 
@@ -61,6 +69,7 @@ label start:
         show star4
 
         b "Bersiap untuk mendarat. Pesawat antariksa kalian siap untuk mendarat di Pangkalan Alpha di Planet Teka-teki."
+        play sound "sounds/ship land.mp3"
         b "Kalian dikirim untuk memasok barang-barang kebutuhan dan memperbarui sistem komputer di pangkalan tersebut."
         b "Akan tetapi, ada yang tidak beres."
         b "Lampu-lampu disana berkedip-kedip."
@@ -83,6 +92,7 @@ label start:
     label roket4:
 
         b "Kalian melangkah masuk ke Kubah Laboratorium. Semua berantakan. Lampu peringatan berkedip dan semua peralatan sudah hancur."
+        play sound "sounds/beep.mp3" fadeout 1.0 fadein 1.0
         b "Labu kimia mendidih dan tabung percobaan pecah."
         b "Pintu menuju reaktor nuklir terbuka dan berayun tak beraturan. Monitor komputer dipenuhi dengan simbol dan tanda-tanda aneh."
         scene background
@@ -101,6 +111,7 @@ label start:
 
         b "Kalian mengikuti arah yang ditunjukkan DATA PAD. Jalur itu membawa kalian melewati ruang mekanik."
         b "Kalian berhenti sebentar untuk mengambil sebuah gulungan besar kabel listrik."
+        play sound "sounds/grab.mp3" fadeout 1.0 fadein 1.0
         b "Kalian telah mengikuti petunjuk arah yang benar. Dalam beberapa menit, kalian sampai di ruang panel surya."
 
         jump star32
@@ -114,12 +125,15 @@ label start:
 
         b "Kalian menulis perintah untuk memutar piringan satelit yang masih utuh agar mengarah ke planet Z."
         b "Kemudian, kalian mencoba mengirim sinyal. Namun, tidak ada yang terjadi."
+        play sound "sounds/sonar.mp3" fadeout 1.0 fadein 1.0
         b "Sebuah tampilan video memperlihatkan adanya gangguan. Robot alien telah menghilang dari kawah!"
         b "Robot itu telah mengambil satu potongan besar dari piringan satelit kedua."
         b "Kalian harus segera menghentikannya sebelum ia memakan piringan satelit lebih banyak lagi."
         b "Rhombus segera datang untuk mengatasi masalah! Dia bergegas menuju ke ruang pengunci udara, menyalakan roket di punggungnya, dan langsung meluncur ke piringan satelit."
+        play sound "sounds/woosh.mp3" fadeout 1.0 fadein 1.0
         b "Di sana, dia menghadapi robot alien. Robot itu terlihat kuat dan berbahaya di hadapan Rhombus."
         b " Akan tetapi, cukup dengan sebuah sengatan listrik dari kantung sumber tenaga Rhombus semua selesai---si robot alien terdiam mematung"
+        play sound "sounds/buzz.mp3" fadeout 1.0 fadein 1.0
         b "Sekarang, Rhombus harus memperbaiki bagian yang rusak. Dia mengirim sinyal meminta bantuan. Bagaimana cara memutar bagian itu agar terpasang kembali di tempat semula dengan pas?"
 
         menu:
@@ -157,8 +171,10 @@ label start:
 
         menu:
             "Tekan panah biru 4 kali":
+                play sound "sounds/button.mp3" fadeout 1.0 fadein 1.0
                 jump scope7
             "Tekan panah biru 5 kali":
+                play sound "sounds/button.mp3" fadeout 1.0 fadein 1.0
                 jump roket32
     #label END-------------------------------------
 
@@ -167,9 +183,11 @@ label start:
         #CHECKPOINT
 
         b "Itu jumlah yang benar"
-        b "Kalian nanti akan membutuhkan angka ini untuk memastikan bahwa semua rbot mikro itu telah dinonaktifkan."
+        b "Kalian nanti akan membutuhkan angka ini untuk memastikan bahwa semua robot mikro itu telah dinonaktifkan."
         b "Sekarang, kalian harus menyelidiki bagian lain dari Pangkalan Alpha."
         b "Mungkin ada masalah lain yang harus diselesaikan, sebelum kalian menemukan kembali para awak."
+
+        $ data1 = 1
 
         #DATA ITEM 1 masukkan DATA PAD
 
@@ -179,10 +197,12 @@ label start:
     label ion7:
 
         b "Kalian mencentang kotak BESAR. DATA PAD kalain mulai terasa panas. Asap muncul  dari balik tombol-tombolnya! Sebuah pesan muncul di layar!"
+        play sound "sounds/steam.mp3"
         scene background
         show ion7
         with fade
         "\"GAGAL MENGOLAH DATA! GAGAL MENGOLAH DATA!\""
+        play sound "sounds/warn.mp3" fadeout 1.0 fadein 1.0
         b "Demgan cepat kalian menghapus tanda centang di kotak itu dan mengulannginya lagi."
         b "BESAR bukan karakteristik yang benar."
         b "Lihat kembail tabel. Beberapa benda besar, seperti jendela, belum rusak, bukan?"
@@ -211,7 +231,8 @@ label start:
 
     label scope7:
 
-        b "Temperatur turunn hingga 5 derajat Celcius."
+        b "Temperatur turun hingga 5 derajat Celcius."
+        play sound "sounds/freeze.mp3" fadeout 1.0 fadein 1.0
         b "Suhu itu masih belum cukup dingin! Cacing-cacing itu masih menggeliat! Pesawat antariksa masih terus membesar!"
         b "Menekan tombol -10 derajat Celcius sebanyak 4 kali akan menurunkan temperatur sebesar 40 derajat Celcius (45 - 40 = 5)."
         b "Berapa derajat lagi kalian harus menurunkan temperatur agar menjadi minus 5 derajat Celcius?"
@@ -248,15 +269,20 @@ label start:
 
     label star8:
 
+        #Checkpoint
+
         scene background
         show star8
         with fade
 
         b "Benar! Pintu brankas terbuka lebar. Kalian menemukan stik data di dalamnya."
         b "Kalian mencolokannya ke DATA PAD untuk memindahkan data di dalamnya."
+        play sound "sounds/plug.mp3" fadeout 1.0 fadein 1.0
+        play sound "sounds/connect.mp3" fadeout 1.0 fadein 1.0
         b "Cara umum untuk menuliskan tanggal dalam bentuk digit adalah hari/bulan/tahun."
         b "Jadi, 28 Juli 2254 ditulis sebagai 28/07/2254."
         b "Sekarang, kalian bisa menghadapi petualangan berikutnya."
+        $ data4 = 1
 
         jump ion11
     #label END-------------------------------------
@@ -266,9 +292,11 @@ label start:
         b "Di luar Kubah Habitat, kalian menemukan sebuah kawah yang belum pernah kalian lihat."
         b "Di dalamnya, terlihat seperti ada sebuah pesawat antarkisa mainan."
         b "Kalian menggunakan kamera DATA PAD untuk memeriksanya."
+        play sound "sounds/camera.mp3" fadeout 1.0 fadein 1.0
         b "Ternyata itu bukan mainan! Itu pesawat yang digunakan para alien untuk menuju pangkalan ini."
         b "Ada barisan robot alien kecil keluar dari pesawat antariksa itu, Mengarah ke Kubah Habitat! Kemudian, kalian memperhatikan simbol-simbol alien yang berbentuk aneh di pesawat."
         b "Kalian memprogram DATA PAD untuk menerjemahkan simbol-simbol itu."
+        play sound "sounds/pad.mp3" fadeout 1.0 fadein 1.0
         b "Tabel terjemahan yang dihasilkan adalah sebagai berikut..."
 
         scene background
@@ -276,8 +304,10 @@ label start:
         with fade
 
         b "DATA PAD menerjemahkan kata pertama..."
+        play sound "sounds/pad.mp3" fadeout 1.0 fadein 1.0
         "\"P A S U K A N\""
         b "Dan, dua kata berikutnya..."
+        play sound "sounds/pad.mp3" fadeout 1.0 fadein 1.0
         "\"P E N D A U R   U L A N G\""
         b "Kalian menggunakan tabel tadi untuk menerjemahkan kata keempat..."
         b "Apakah hasil terjemahan dari kata keempat?"
@@ -309,6 +339,7 @@ label start:
         with fade
 
         b "Kalian memprogram DATA PAD unntuk menganalisis tanah Biodome."
+        play sound "sounds/pad.mp3" fadeout 1.0 fadein 1.0
         b "Kalian terkesima ketika layar menampilkan diagram batang yang membandingkan tanah Biodome dengan tanah normal."
         b "Bagaimana perbandingan jumlah cacing pada tanah Biodome dengan tanah biasa?"
 
@@ -338,12 +369,14 @@ label start:
 
     label moon11:
         play music "sounds/space chill.mp3" fadeout 1.0 fadein 1.0
+        scene background
 
         b "Pesawat antariksa kalian berhasil mendarat di area landasan. Denah di layar komputer memperlihatkan tampilan pangkalan."
-        scene background
+
         show bulan11
         with fade
-        b "Lampu darurat berwarna merah berkedip-kedip di sebelah Kubah Habitat, Kubah Laboratorium, dan Kubah Komunkasi."
+        b "Lampu darurat berwarna merah berkedip-kedip di sebelah Kubah Habitat, Kubah Laboratorium, dan Kubah Komunikasi."
+        play sound "sounds/warn.mp3" fadeout 1.0 fadein 1.0
         b "Lampu peringatan kuning menyala, menunjukkan bahwa temperatur suhu di Biodome sedang meninggi! Kalian bergegas memakai pakaian luar angkasa."
 
         jump roket14
@@ -353,6 +386,7 @@ label start:
 
         b "Kalian baru saja memasukkan kode yang salah!"
         b "Lampu peringatan mulai berkedip."
+        play sound "sounds/warn.mp3" fadeout 1.0 fadein 1.0
         b "Kalian memiliki satu lagi kesempatan sebelum brankas itu terkunci selamanya."
         b "Agustus adalah bulan kedelapan. Bulan keberapakah Juli?"
 
@@ -366,6 +400,7 @@ label start:
         with fade
 
         b "Kalian meminta komputer untuk mencari planet yang ukurannya kira-kira sama besar dengan Bumi di antara empat sistem tata surya berplanet delapan"
+        play sound "sounds/pad.mp3" fadeout 1.0 fadein 1.0
         b "Ternyata ada satu di setiap sistem tata surya tersebut!"
         b "Untuk membantu menentukan planet mana yang tidak dihuni, kalian meminta agar suhu maksimum dan minimum setiap planet ditampilkan."
         b "Planet manakah yang memiliki jangkauan temperatur yang sama dengan Bumi?"
@@ -384,8 +419,10 @@ label start:
         with fade
 
         b "Kalian mencoba terhubung dengan komputer Kubah Laboratorium melalui DATA PAD"
+        play sound "sounds/pad.mp3" fadeout 1.0 fadein 1.0
         b "Sebuah peringatan muncul..."
         "\"Serangan Virus! Semua data komputer diacak-acak! Sistem pengamanan laboratorium tidak bisa berjalan! Kebocoran radiasi!\""
+        play sound "sounds/warn.mp3" fadeout 1.0 fadein 1.0
         b "Untuk bisa masuk ke dalam dan menghentikan serangan itu, kalian harus memasukkan kata kunci yang tepat pada layar sentuhnya."
 
         jump ion37
@@ -396,6 +433,7 @@ label start:
         b "Itu instruksi yang benar! Rhombus memutar potongan itu."
         b "Ternyata memang pas dan bisa masuk dengan sempurna."
         b "Piringan itu mulai mengirimkan pesan kalian."
+        play sound "sounds/sonar.mp3" fadeout 1.0 fadein 1.0
 
         jump ion19
     #label END-------------------------------------
@@ -406,6 +444,8 @@ label start:
         show ion13
         with fade
 
+        #Check Data
+
         b "Kalian mendekati ruang pengunci udara di Kubah Komunikasi."
         b " Kalian berencana untuk menghubungi alien yang bertanggung jawab atas kerusakan di Pangkalan Alpha."
         b "Sebelum berupaya masuk, kalian membuat daftar beberapa informasi yang akan kalian butuhkan."
@@ -413,7 +453,12 @@ label start:
 
         menu:
             "DATA telah terkumpul":
-                jump roket38
+                if data1 == data2 == data3 == data4 == 1:
+                    jump roket38
+                else:
+                    b "Kamu belum mendapatkan seluruh DATA yang dibutuhkan."
+                    b "Coba jelajahi tempat lain dari Pangkalan Alpha, mungkin kamu dapat menemukan DATA yang dibutuhkan."
+                    jump roket14
             "DATA belum terkumpul":
                 jump roket14
     #label END-------------------------------------
@@ -444,7 +489,7 @@ label start:
     label roket14:
 
         scene background
-        show roket14
+        show bulan11
         with fade
 
         b "Pangkalan Alpha mana yang akan kamu selidiki?"
@@ -468,6 +513,7 @@ label start:
 
         b "Setelah memiliki data air dan tanah, kalian mulai memikirkan teori yang bisa menjelaskan apa yang terjadi."
         b "Kalian menyusun hipotesis kalian dalam bentuk diagram alur di DATA PAD..."
+        play sound "sounds/pad.mp3" fadeout 1.0 fadein 1.0
         b "bagaimana hasil hipotesis kalian tentang alien pendaur ulang?"
 
         menu:
@@ -482,6 +528,7 @@ label start:
         b "Kalian memilih kombinasi yang lebih masuk akal. Tiga dari empat kombinasi memiliki setidaknya satu lampu hijau."
         b "Hanya satu kombinasi yang memiliki dua merah."
         b "Pintu di dalam ruang pengunci udara bergeser. Kalian pun memasuki Kubah Laboratorium."
+        play sound "sounds/door.mp3" fadeout 1.0 fadein 1.0
 
         jump roket4
     #label END-------------------------------------
@@ -513,6 +560,7 @@ label start:
 
         b "Sebuah jam penghitung mundur tampil di monitor komputer."
         b "Dalam 60 detik, reaktor akan meledak!"
+        play sound "sounds/clock.mp3" fadeout 1.0 fadein 1.0
         "\"60, 59, 58, .....\""
         b "Kalian harus bertindak cepat! kelain menggunakan program perkiraan risiko  di DATA PAD untuk membantu memutuskan apa yang harus dilakukan."
         b " Berikut hasil data yang diperoleh."
@@ -558,7 +606,7 @@ label start:
         play music "sounds/space chill.mp3" fadeout 1.0 fadein 1.0
         b "Kalian mencoba memikirkan cara untuk menghentikan robot-robot alien."
         b "Tidak ada udara yang tersisa di Kubah Habitat, jadi kalian tidak bisa menggunakan mesin penyedot debu untuk menyedot mereka."
-        b "Namun, kemudian kalian menndapatkan ide bagus---para alien itu terbuat dari logam."
+        b "Namun, kemudian kalian mendapatkan ide bagus---para alien itu terbuat dari logam."
         b "Beberapa jenis logam dapat tertarik oleh magnet! Kalian mencari di DATA PAD lebih banyak informasi tentang magnet dan logam."
         b "Kalian menemukan data yang disajikan dalam bentuk diagram VENN."
 
@@ -569,6 +617,7 @@ label start:
         b "Kalian memutuskan untuk melakukan sebuah percobaan."
         b "Baju antariksa kalian dilengkapi dengan sepatu bot magnet yang membantu kalian menempel di sebuah permukaan benda di luar angkasa."
         b "Kalian mengambil salah satu magnet dari bagian bawah sepatu bot."
+        play sound "sounds/magnet.mp3" fadeout 1.0 fadein 1.0
         b "Kalian menggesekkan magnet ke berbagai permukaan berbeda."
         b "Kemudian, kalian mengamati magnet dan permukaan-permukaan tersebut secara lebih seksama dengan mikroskop DATA PAD."
         b "Bagaimana hasil dari percobaan yang telah kalian lakukan?"
@@ -589,6 +638,7 @@ label start:
         b "Kalian berpikir temperatur di dalam Biodome mencapai 45 derejat celcius."
         b "Ini lebih panas dari suhu yang seharusnya."
         b "Kalian menyalakan sistem pendingin di baju antariksa kalian dan melewati pintu ruang pengunci udara."
+        play sound "sounds/steam.mp3" fadeout 1.0 fadein 1.0
         b "Kalian benar. Situasi di dalam terasa seperti di hutan hujan."
         b "Wortel-wortel terlihat setinggi pepohonan. Bunga matahari terlihat sebesar roda gerobak. Tomat terlihat sebesar bola sepak."
 
@@ -602,13 +652,14 @@ label start:
         with fade
 
         b "Kalian mengikuti arah yang ditunjukkan DATAPAD."
-        b "Sepertinya, rute yangdiberikan membawa kalian ke bagian belakang Pangkalan Alpha. Dan, tampaknya itu tidak benar."
-        b "Kemudian, diantara lubang-lubang di lantai, kalianmelihat sesuatu yang bergerak-gerak."
+        b "Sepertinya, rute yang diberikan membawa kalian ke bagian belakang Pangkalan Alpha. Dan, tampaknya itu tidak benar."
+        b "Kemudian, diantara lubang-lubang di lantai, kalian melihat sesuatu yang bergerak-gerak."
         b "teryata itu adalah salah satu robot alien."
         b "Namun, itu tidak seperti robot kecil yang ada di Kubah Habitat."
         b "Alien itu hampir saja memakan semua piringan satelit!"
         b "Ukurannya besar! Kepala mekanis robot alien itu berputar."
         b "Mata elektroniknya melihat kalian."
+        play sound "sounds/robot.mp3" fadeout 1.0 fadein 1.0
         b "Kaki mekanisnya mulai melangkah mendekati kalian."
         b "Di ujung kedua tangan robot itu terdapat capit raksasa."
         b "Keduanya dapat memotong logam semudah memotong kertas."
@@ -617,6 +668,7 @@ label start:
         "..."
         b "Tiba-tiba, ada kilatan dari belakang kalian."
         b "Tenyata, itu sebuah sinar laser yang sangat kuat."
+        play sound "sounds/laser.mp3" fadeout 1.0 fadein 1.0
         b "Sebuah lubang dengan letupan asap tiba-tiba terbentuk di depan robot alien."
         b "Alien itu terjungkal dan masuk ke dalamnya. Dia terjebak di sana!"
         b "Siapa atau apakah yang telah menolong kalian?"
@@ -647,6 +699,7 @@ label start:
         b "Akan tetapi, benda itu juga memiliki akar dan daun!"
         b "Dia tumbuh membesar! ada sesuatu tertulis di badan pesawat itu."
         b "DATA PAD kalian menerjemahkan tulisan alien tersebut..."
+        play sound "sounds/pad.mp3" fadeout 1.0 fadein 1.0
 
         "\"PASUKAN PENDAUR ULANG DENGAN KEMAMPUAN MENGEMBANGKAN DIRI\""
 
@@ -657,6 +710,7 @@ label start:
 
         b "Sinyal kalian dijawab."
         b "Sebuah suara menjawab dengan bahasa yang terdengar seperti suara kicauan burung!"
+        play sound "sounds/chirp.mp3" fadeout 1.0 fadein 1.0
         b "Akan tetapi, komputer dengan otomatis menerjemahkannya."
 
         u "Terima kasih telah menghubungi Sistem Komunikasi Telepon Antarplanet Zorgon. Ada yang bisa saya bantu?"
@@ -693,6 +747,7 @@ label start:
 
         b "Akhirnya, saluran teleon kalian tersambung."
         b "Ternyata itu sambungan video! Sesosok alien dengan wajah aneh, namun ramah, muncul di layar."
+        play sound "sounds/static.mp3" fadeout 1.0 fadein 1.0
 
         u "Selamat sore. Anda sedang berbicara dengan Zapie."
         z "Bisa anda sebutkan nomor akun anda?"
@@ -711,6 +766,7 @@ label start:
 
         b "Kalian menuliskan \"Virus Alien\" pada program pencari di DATA PAD."
         b "Setelah beberapa saat, inilah yang ditampilkan di layar."
+        play sound "sounds/pad.mp3" fadeout 1.0 fadein 1.0
 
         scene background
         show roket20
@@ -734,7 +790,7 @@ label start:
         show planet20
         with fade
 
-        b "Tidak Perlu takut. Ini adalah petuaangan yang menasyikkan dan bantuan akan selalu ada untuk kalian."
+        b "Tidak Perlu takut. Ini adalah petualangan yang mengasyikkan dan bantuan akan selalu ada untuk kalian."
         b "Jika kalian terjebak atau berada dalam bahaya, penolong misterius akan menuntun dan menjaga kalian agar tetap aman."
         b "Ikuti saja petunjuknya, satu demi satu, dan lihat seberapa jauh perjalanan yang bisa kalian tempuh."
         b "Kalian mungkin akan terkejut saat mengetahui seberapa luas pengetahuan kalian."
@@ -748,6 +804,7 @@ label start:
         b "Sementara pesawat alien masih di dalam wadah plastik, kalian mencoba melakukan koneksi nirkabel antara DATA PAD kalian dengan kapal itu."
         b "Data terunduh ke dalam layar DATA PAD..."
         "."
+        play sound "sounds/pad.mp3" fadeout 1.0 fadein 1.0
         ".."
         "..."
         b "Data itu terlihat seperti bahasa yang tidak karuan dan tidak bermakna."
@@ -774,11 +831,12 @@ label start:
     label roket22:
 
         scene background
-        show roke22
+        show roket22
         with fade
 
         b "Kalian menunjuk ke gambar-gambar planet W dan Z yang ada di layar komputer."
         b "Mata Rhombus mulai memancarkan percikan cahaya"
+        play sound "sounds/beep.mp3" fadeout 1.0 fadein 1.0
         b "Asap muncul dari penunjuk baterainya. Itu adalah planet yang salah!"
         b "Jangkauan adalah jarak antara nilai terendah dan nilai tertinggi. Suhu maksimum bumi adalah 60 derejat Celcius dan suhu minimumnya adalah minus 90 derejata Celcius."
         b "Berarti jangkaunnya adalah 150 derajat."
@@ -802,6 +860,7 @@ label start:
         b "Brankas itu terbuat dari lapisan berlian super kuat dan tahan benturan."
         b "Brankas itu tidak terbuat dari logam, jadi para alien tidak bisa merusaknya."
         b "Kalian membaca keterangan tambahan dari Amy di DATA PAD..."
+        play sound "sounds/pad.mp3" fadeout 1.0 fadein 1.0
 
         scene background
         show planet22
@@ -813,8 +872,10 @@ label start:
 
         menu:
             "28/07/2254":
+                play sound "sounds/pad.mp3" fadeout 1.0 fadein 1.0
                 jump star8
             "28/08/2254":
+                play sound "sounds/pad.mp3" fadeout 1.0 fadein 1.0
                 jump scope11
     #label END-------------------------------------
 
@@ -827,7 +888,7 @@ label start:
         b "Betul sekali. Ada 14 buah sendok logam yang rusak."
         b "Turus adalah sebuah cara cepat untuk menghitung jumlah dari benda-benda atau kejadian-kejadian."
         b "Tabel angkanya adalah tabel frekuensi."
-        b "Dalam tabel frekuensi inim setiap turus bernilai satu."
+        b "Dalam tabel frekuensi ini setiap turus bernilai satu."
 
         jump roket30
     #label END-------------------------------------
@@ -835,15 +896,19 @@ label start:
     label ion23:
 
         b "DATA PAD kalian segera membuat panggilan."
+        play sound "sounds/ring.mp3" fadeout 1.0 fadein 1.0
         b "DATA PAD Vineeta menjawab."
         b "Awalnya, kalian melihat ruang Kubah Laboratorium di layar DATA PAD, tapi kemudian sebuah pola alien aneh muncul di layar dan pola itu mulai berputar."
         scene background
         show ion23
         with fade
+
+        play sound "sounds/spin.mp3" fadeout 1.0 fadein 1.0
         b "Kalian merasa pusing. Kalian juga juga tidak bisa berhenti melihatnya."
         b "Kalian mulai mengantuk."
         b "Tiba-tiba, kalian mendengar suara gerakan benda logam."
         b "Benda logam itu menghantam lengan kalian."
+        play sound "sounds/hit.mp3" fadeout 1.0 fadein 1.0
         b "DATA PAD kalian jatuh ke lantai dan mata kalian langsung terbuka kembali."
         b "Hampir saja. Apa itu yang baru saja menyelamatkan kalian?"
         b "Vineeta adalah kepala ilmuwan, bukan komandan stasiun."
@@ -868,6 +933,7 @@ label start:
         b "Jika kalian memberi tahu dia berapa banyak pasukan yang dilepas, juga nomor seri cacing-cacing, dia akan mengirim kode untuk membalik program pendaur ulang mereka."
         b "Untungnya, kalian sudah mengumpulkan semua data di DATA PAD."
         b "Kalian mengunggah informasi dan mengamati apa yang terjadi di pangkalan melalui monitor video."
+        play sound "sounds/pad.mp3" fadeout 1.0 fadein 1.0
 
         jump ion24
     #label END-------------------------------------
@@ -876,6 +942,7 @@ label start:
 
         b "DATA PAD kalian memilki kamera yang juga dapat digunakan sebagai mikroskop canggih."
         b "Kalian mendekatkan lensa ke salah satu sendok yang rusak."
+        play sound "sounds/camera.mp3" fadeout 1.0 fadein 1.0
         b "Inilah yang kalian lihat..."
 
         scene background
@@ -884,12 +951,14 @@ label start:
 
         b "Terlihat sendok itu seperti dimakan oleh kerumunan \"serangga\" kecil."
         b "Kalian memfokuskan lensa ke salah satu \"serangga\" dan memperbesar tampilannya."
+        play sound "sounds/camera.mp3" fadeout 1.0 fadein 1.0
         b "Ternyata, itu sama sekali bukan serangga."
         b "Itu adalah robot alien---seperti mainan."
         b "Robot-robot itu memotong-motong logam dan menempelkannya ke tubuh mereka."
         b "Kalian harus memperhatikan secara seksama, robot-robot itu tampak membesar di hadapan mata kalian."
 
         b "Kalian memprogram DATA PAD untuk membuat diagram garis yang akan menganalisis tingkat pertumbuhan robot alien itu."
+        play sound "sounds/pad.mp3" fadeout 1.0 fadein 1.0
         b "DATA PAD meminta kalian untuk memasukkan ukuran alien itu setelah 12 jam."
         b "Berapa ukuran yang kalian masukkan pada DATA PAD?"
 
@@ -910,11 +979,14 @@ label start:
         b "Tidak---itu tidak benar!"
         b "Salah satu lebah raksasa meninggalkan bunga tomat."
         b "Dia mengarah ke kalian!"
+        play sound "sounds/bee.mp3" fadeout 1.0 fadein 1.0
         b "Dengungannya memekakkan telinga."
         b "Sengatnya sebesar pisau belati!"
 
         b "Kemudian, terdengar suara berdengung keras, semacam peringatan."
+        play sound "sounds/warn.mp3" fadeout 1.0 fadein 1.0
         b "Awan asap mengepul dari atas bahu kalian dan mengenai lebah itu,"
+        play sound "sounds/steam.mp3" fadeout 1.0 fadein 1.0
         b "Lebah itu pun pergi, Hampir saja!"
 
         b "Tomat berubah kuning dalam 6,5 detik dan matang sempurna setelah 12,0 detik."
@@ -943,11 +1015,13 @@ label start:
         b "Kemudian, kalian melihat pesawat alien kecil."
         b "Sepertinya, pesawat itu jatuh di sebelah pintu masuk Kubah Laboratorium!"
         b "DATA PAD kalian menerjemahkan simbol alien di badan pesawat..."
+        play sound "sounds/pad.mp3" fadeout 1.0 fadein 1.0
         "\"PASUKAN PENGUMPUL DATA\"."
         b "Kabel hitam keluar dari pesawat itu."
         b "Kabel-kabel itu tumbuh ke segala arah, seperti tanaman rambat."
         b "Satu kabel sudah mencapai Kubah Laboratorium."
         b "Kabel itu menancap secara otomatis ke colokan data di pintu pengunci udara!"
+        play sound "sounds/plug.mp3" fadeout 1.0 fadein 1.0
 
         jump planet12
     #label END-------------------------------------
@@ -970,8 +1044,10 @@ label start:
 
         menu:
             "Besar":
+                play sound "sounds/connect.mp3" fadeout 1.0 fadein 1.0
                 jump ion7
             "Logam":
+                play sound "sounds/connect.mp3" fadeout 1.0 fadein 1.0
                 jump planet16
     #label END-------------------------------------
 
@@ -1003,8 +1079,10 @@ label start:
 
         menu:
             "panggil Vineeta":
+                play sound "sounds/pad.mp3" fadeout 1.0 fadein 1.0
                 jump ion23
             "panggil Amy":
+                play sound "sounds/pad.mp3" fadeout 1.0 fadein 1.0
                 jump planet32
     #label END-------------------------------------
 
@@ -1020,6 +1098,7 @@ label start:
         b "Salah satu kabel dari pesawat alien mulai merayap ke arah kalian."
         b "Kabel itu ingin menempel di pakaian antariksa kalian!"
         b "Kemudian, dengan disertai suara dengkingan keras, sebuah tangan mekanik yang dilengkapi denga pemotong kabel muncul dari belakang kalian."
+        play sound "sounds/robot.mp3" fadeout 1.0 fadein 1.0
         b "Pemotongnya langsung mendekati kabel itu dan memutuskannya."
         b "Hampir saja!"
         b "Ada tiga angka 3 di putaran pertama, tapi hanya ada dua angka 6 dan satu angka 4."
@@ -1058,7 +1137,9 @@ label start:
 
         b "Kalian baru saja memilih kombinasi yang salah!"
         b "Ruang pengunci udara mulai dipenuhi gas berwarna ungu."
+        play sound "sounds/steam.mp3" fadeout 1.0 fadein 1.0
         b "Gas itu mulai meluruhkan baju antariksa kalian! Kemudian, semburan air yang kuat mengenai pakaian antariksa kalian---dari mana datangnya itu?"
+        play sound "sounds/spray.mp3" fadeout 1.0 fadein 1.0
         b "Gas itu menguap dan akhirnya menghilang."
         b "Ada empat kombinasi warna untuk lampu itu."
         b "Tiga dari empat kombinasi seharusnya memiliki satu lampu hijau."
@@ -1091,6 +1172,7 @@ label start:
     label ion31:
 
         b "Oh tidak, itu adalah alat penjawab telepon!"
+        play sound "sounds/ring.mp3" fadeout 1.0 fadein 1.0
         c "Terima kasih telah menghubungi Perusahaan Pendaur Ulang Galaksi."
         c "Untuk masalah terkait penjualan, silahkan tekan 1."
         c "Untuk melacak pesanan anda, silahkan tekan 2."
@@ -1118,10 +1200,13 @@ label start:
         b "Kalian memeriksa salah satu cacing pendaur ulang dengan mikroskop."
 
         b "DATA PAD menerjemahkan tulisan alien di kepala cacing..."
+        play sound "sounds/pad.mp3" fadeout 1.0 fadein 1.0
 
         "\"NOMOR SERI: X/002.\""
 
         b "Kalian menyimpan nomor itu di DATA PAD."
+
+        $ data2 = 1
 
         jump moon23
     #label END-------------------------------------
@@ -1132,7 +1217,9 @@ label start:
         scene background
 
         b "DATA PAD kalian membuat sambungan komunikasi."
+        play sound "sounds/pad.mp3" fadeout 1.0 fadein 1.0
         b "DATA PAD Amy mengirimkan sebuah rekaman pesan"
+        play sound "sounds/static.mp3" fadeout 1.0 fadein 1.0
         "\"Perhatian! Perhatian!\""
         b "Rekaman suara Amy terdengar."
 
@@ -1156,8 +1243,10 @@ label start:
         with fade
 
         b "Kalian menyambungkan kabel ke panel surya."
+        play sound "sounds/plug.mp3" fadeout 1.0 fadein 1.0
         b "Kemudian, sambil mengulur kabel, kalian kembali lagi ke Kubah Habitat."
         b "Kalian menyambungkan ujung kabel yang lain ke jeruji logam."
+        play sound "sounds/plug.mp3" fadeout 1.0 fadein 1.0
         b "Ketika kedua matahari planet ni terbit, listrik akan menghentikan para alien di tempat."
 
         jump ion9
@@ -1167,6 +1256,7 @@ label start:
 
         b "Ketika kalian memasukkan angka 1.100, sebuah peringatan muncul..."
         "\"PERHATIAN : DATA AKAN RUSAK BERAT\""
+        play sound "sounds/warn.mp3" fadeout 1.0 fadein 1.0
         b "Nyaris saja! Jika angka yang kalian masukkan salah, beberapa robot mikro mungkin akan tetap aktif."
         b "Kunci menunjukkan bahwa seharusnya kalian menghitung dalam ribuan ketika akan menjumlahkan semua simbol gambar,"
         b "Jangan lupa menambahkan dua buah simbol berbentuk setengah gambar, masing-masing bernilai 500."
@@ -1187,6 +1277,7 @@ label start:
 
         b "Kalian mulai membicarakan data planet itu."
         b "Ketika kalian menyebutkan angka yang merupakan modus dari jumlah planet, Rhombus berbunyi nyaring!"
+        play sound "sounds/beep.mp3" fadeout 1.0 fadein 1.0
         b "Menurut kalian berapakah modus dari data tersebut?"
 
         menu:
@@ -1215,11 +1306,13 @@ label start:
         b "Kalian pikir suhunya hanya 4,5 derajat Celcius."
         b "Kalian lalu menyalakan pemanas di dalam pakaian antariksa kalian."
         b "Kalian membuka pintu ruang pengunci udara dan masuk ke dalam Biodome."
+        play sound "sounds/steam.mp3" fadeout 1.0 fadein 1.0
         b "Rasanya seperti di dalam sauna!"
         b "Bahkan, ada uap di dalam helm kalian."
         b "Kalian mulai pusing karena suhu di dalam ruangan itu terlalu panas."
         b "Kemudian terdengar suara keras."
         b "Tangan mekanis memegang dan menarik kalian kembali ke dalam ruangan pengunci udara."
+        play sound "sounds/robot.mp3" fadeout 1.0 fadein 1.0
         b "Tubuh kalian kembali mendingin,"
         b "Skala termometer dimulai dari 0 derajat Celcius hingga 100 derajat Celcius."
         b "Masing-masing bagian mewakili 10 derajat."
@@ -1237,6 +1330,7 @@ label start:
 
         b "Pesan lain dari alien muncul di monitor Kubah Laboratorium."
         b "Kalian menggunakan program penerjemah di DATA PAD..."
+        play sound "sounds/pad.mp3" fadeout 1.0 fadein 1.0
 
         "\"PROSES PENGUMPULAN DATA TERHENTI\""
         "\"UNTUK BANTUAN TEKNIS, HUBUNGI PLANET ZORGON 112 345 2011\""
@@ -1247,6 +1341,8 @@ label start:
         b "Kalian mencatat nomor tadi."
         b "Kalian memutuskan untuk mencoba menghubungi planet misterius ini."
         b "Pesawat antariksa kecil mereka harus dihentikan!"
+
+        $ data3 = 1
 
         jump roket14
     #label END-------------------------------------
@@ -1263,6 +1359,7 @@ label start:
         b "Kemudian, kalian teringat pada sel tenaga matahari di denah pangkalan,"
         b "Jika kalian bisa menghubungkannya dengan Kubah Habitat, rencana kalian pasti berhasil."
         b "Kalian kembali menampilkan denah pangkalan di DATA PAD."
+        play sound "sounds/pad.mp3" fadeout 1.0 fadein 1.0
         b "Kali ini, kalian membuat kisi-kisi untuk membantu menentukan rute perjalanan yang akan kalian tempuh."
 
         b "Saat ini, kalian berada di kisi persegi 9, 7."
@@ -1280,11 +1377,14 @@ label start:
     label roket36:
 
         b "Kalian mengunggah virus Skaro ke komputer Kubah Laboratorium."
+        play sound "sounds/pad.mp3" fadeout 1.0 fadein 1.0
         b "Ternyata salah! Sekarang ada dua Virus di dalam sistem."
         b "Kekacauan di Kubah Laboratorium makin menjadi-jadi."
+        play sound "sounds/factory.mp3" fadeout 1.0 fadein 1.0
         b "Reaktor mulai bergetar dan mengeluarkan asap!"
         b "Sekali lagi, lihat polanya."
         b "Dengan cepat kalian membuat duplikasi virus Skaro di DATA PAD."
+        play sound "sounds/pad.mp3" fadeout 1.0 fadein 1.0
         b "Kalian membalikkannya secara vertikal dan horizontal untuk membuat bayangan cermin."
         b "Kemudian, kalian mengunggah bayangan cermin itu ke komputer Kubah Laboratorium."
         b "Ternyata berhasil. Pola virus langsung berhenti! Reaktor pun berhenti bergetar."
@@ -1299,7 +1399,9 @@ label start:
         with fade
 
         b "Kalian menuliskan kata \"METAL\" di DATA PAD."
+        play sound "sounds/pad.mp3" fadeout 1.0 fadein 1.0
         b "DATA PAD mulai bergetar. Sinar laser menyorot ke berbagai arah dari layarnya."
+        play sound "sounds/warn.mp3" fadeout 1.0 fadein 1.0
         b "Awas meledak!"
         b "Terjemahan kalian salah!, periksa lagi simbol-simbol di tabel."
         b "Cepat---coba terjemahkan kembali!"
@@ -1314,7 +1416,7 @@ label start:
         with fade
 
         b "Rhombus terlihat gelisah."
-        b "Kepalanya berputar dan dai melompat-lompat! Itu angka yang salah!"
+        b "Kepalanya berputar dan dia melompat-lompat! Itu angka yang salah!"
         b "Modus adalah nilai yang paling sering muncul (umum) dalam sebuah himpunan data."
         b "Cepat, pilih angka lain sebelum Rhombus meledak!"
 
@@ -1328,6 +1430,7 @@ label start:
         with fade
 
         b "Kalian meminta perbendaharaan kode dari DATA PAD."
+        play sound "sounds/pad.mp3" fadeout 1.0 fadein 1.0
         b "Kode itu seharusnya berupa dua digit angka, misalnya 66."
         b "Akan tetapi, bukannya dua digit angka yang keluar di layar, melainkan dua buah pemintal."
         b "Panah pemintal berputar dengan liar ketika virus mengubah-ubah angka secara acak."
@@ -1349,6 +1452,7 @@ label start:
         b "Rhombus mencoba memasang potongan itu di tempatnya, tetapi tidak berhasil!"
         b "Alien mulai terbangun setelah sebelumnya terkena sengatamn listrik."
         b "Tangan mekanisnya mulai bergerak perlahan mendekati benda-benda logam."
+        play sound "sounds/robot.mp3" fadeout 1.0 fadein 1.0
         b "Kalian harus cepat! Beri Rhombus perintah yang tepat."
         b "Lihatlah bentuk itu kembali."
         b "Kalian harus memutarnya ke kanan agar bisa masuk ke tempat semula dengan pas."
@@ -1363,12 +1467,15 @@ label start:
         with fade
 
         b "Kalian mengunggah virus Kronos ke komputer Kubah Laboratorium."
+        play sound "sounds/pad.mp3" fadeout 1.0 fadein 1.0
         b "Kalian telah memilih virus yang tepat."
         b "Pola virus Kronos menghentikan pola cermin mereka."
         b "Melalui jendela kubah, kalian bisa melihat kabel data dari pesawat alien mulai mengeluarkan asap."
+        play sound "sounds/steam.mp3" fadeout 1.0 fadein 1.0
         b "Kemudian, kabel itu terlepas dari colokan yang ada di pintu ruangan pengunci udara, lalu kembali merayap ke pesawatnya."
         b "Kabel itu tidak menyukai efek dari \"antivirus\" yang kalian berikan!"
         b "Komputer menyala kembali."
+        play sound "sounds/tvon.mp3" fadeout 1.0 fadein 1.0
         b "Semua mulai bekerja lagi secara normal."
         b "Akan tetapi, tidak dengan reaktornya."
         b "Reaktor mulai berkilau dan mengeluarkan radiasi biru."
@@ -1384,6 +1491,7 @@ label start:
 
         b "Itu jumlah yang salah!"
         b "Tepat ketika kalian menulis 12, sebuah pesan muncul di layar DATA PAD..."
+        play sound "sounds/warn.mp3" fadeout 1.0 fadein 1.0
         "\"SISTEM RUSAK, MEMATIKAN DIRI\""
         b "Oh, tidak! Tanpa DATA PAD kalian tidak bisa apa-apa!"
         b "Turus adalah sebuah cara cepat untuk menghitung jumlah dari benda-benda atau kejadian-kejadian."
@@ -1403,6 +1511,7 @@ label start:
         b "Kalian memutuskan pembangkit listrik reaktor."
         b "Namun, ternyata itu tidak berpengaruh apapun."
         b "Kilauan radiasi makin membesar!"
+        play sound "sounds/buzz.mp3" fadeout 1.0 fadein 1.0
         b "Kemungkinan bernilai 1 artinya sesuatu itu pasti terjadi."
         b "Kemungkinan 0.5 artinya terjadi atau tidak terjadinya sesuati memiliki kesempatan yang sama---misalnya ketika melempar koin."
         b "Kemungkinan untuk mendapatkan gambar sama besar dengan kemungkinan  untuk mendapatkan angka."
@@ -1420,9 +1529,11 @@ label start:
         with fade
 
         b "Kalian menekan tombol masuk di ruangan pengunci udara."
+        play sound "sounds/button.mp3" fadeout 1.0 fadein 1.0
         b "Sebuah pesan muncul di layar."
         "\"Area aman. Masukkan kode keamanan pangkalan.\""
         b "Kalian memasukkan kode yang diperoleh dari stik data."
+        play sound "sounds/pad.mp3" fadeout 1.0 fadein 1.0
         b "Ruang pengunci udara bekerja."
         b "Ketika kalian memasuki ruang pengunci udara, kalian menyadari bahwa ada sesuatu yang ikut masuk bersama kalian!"
         b "Ternyata Rhombus, robot penjaga Pangkalan Alpha."
@@ -1442,6 +1553,7 @@ label start:
         b "Bunga-bunga itu berubah menjadi buah tomat baru dan segera matang."
 
         b " Kalian menggunakan perekam video DATA PAD untuk merekam pertumbuhan sebuah tomat."
+        play sound "sounds/camera.mp3" fadeout 1.0 fadein 1.0
         b "Kalian memutarnya kembali dan inilah hasilnya..."
 
         scene background
@@ -1465,9 +1577,11 @@ label start:
 
         b "Tidak, ada lebih banyak pupuk alien dalam air itu!"
         b "Tiba-tiba kekuatan semprotan air meningkat."
+        play sound "sounds/spray.mp3" fadeout 1.0 fadein 1.0
         b "Semprotan itu begitu kuat hingga bisa mnejatuhkan kalian."
         b "Kemudian, sebuah kaki mekanis menginjak selang tersebut dan menghentikan aliran airnya."
-        b "\"irisan\" dalam sebuah diagram pai menunjukkan pecahan dari seluruh bagian yang membentuk pai  utuh."
+        play sound "sounds/robot.mp3" fadeout 1.0 fadein 1.0
+        b "\"irisan\" dalam sebuah diagram pai menunjukkan pecahan dari seluruh bagian yang membentuk pai utuh."
         b "Besar irisan \"pupuk alien\" dalam air Biodome sebanyak seperempat bagian dari keseluruhan pai."
         b "Berapakah seperempat jika ditulis dalam persentase?"
 
@@ -1483,8 +1597,10 @@ label start:
         b "Ketika kalian mengamati para alien di kabel tembaga, mereka semua bergerak cepat satu arah"
         b "Mereka mendorong kabel itu kearah kalian, mereka bermaksud menusuk baju antariksa kalian."
         b "Tiba-tiba, sebuah lengan mekanik menggapai dari belakang kalian."
+        play sound "sounds/robot.mp3" fadeout 1.0 fadein 1.0
         b "Terdengar suara keras diikuti dengan kilauan biru."
         b "Sentakan listrik mengalir di kawat."
+        play sound "sounds/buzz.mp3" fadeout 1.0 fadein 1.0
         b "Para alien membeku ketika aliran listrik mengenai tubuh mereka."
         b "Itu dia! Listrik! Semua logam menghantarkan listrik!"
         b "Entah bagaimana caranya, yang jelas kalian harus mengalirkan listrik ke semua benda logam di Kubah Habitat."
@@ -1501,6 +1617,7 @@ label start:
 
         b "Kalian memutuskan untuk memeriksa tananh dan mencari tahu penyebab kenapa tanah itu memiliki lebih sedikit cacing."
         b "Kalian membungkuk dan mengambil segenggam tanah."
+        play sound "sounds/grab.mp3" fadeout 1.0 fadein 1.0
         b "Kalian salah. Ternyata tanah itu penuh dengan cacing yang menggeliat-geliat!"
         b "Tapi, itu bukan cacing biasa!"
         b "Tubuhnya hangat dan berlendir, tapi kepalanya mekanis, dengan gigi tajam yang mampu mengunyah apapun."
@@ -1508,6 +1625,7 @@ label start:
         b "kalian mengguncangkan tangan, tapi mereka tetap menempel!"
         b "Lihat kembali ukuran pecahan \"cacing\" pada tanah Biodome---jauh lebih besar daripada ukuran pecahan \"cacing\" pada tanah normal."
         b "Tepat ketika cacing-cacing itu akan mengunyah sarung tangan kalian, sebuah lengan mekanis datang dari belakang kalian."
+        play sound "sounds/robot.mp3" fadeout 1.0 fadein 1.0
         b "Lengan tersebut menyemprot cacing-cacing itu dengan cairan dingin yang membekukan."
         b "Mereka langsung berhenti menggeliat dan jatuh ke tanah."
         b "Hampir saja. Ada seseorang yang menjaga kalian!"
@@ -1536,6 +1654,7 @@ label start:
         b "mereka berkumpul di sendok dan mulai berbaris. Mereka mendekati kalian!"
         b "Jika mereka berhasil mencapai kalian, mereka akan memakan semua logam di pakaian antariksa kalian!"
         b "Kemudian, di belakang kalian terdengar suara keras."
+        play sound "sounds/robot.mp3" fadeout 1.0 fadein 1.0
         b "Sebuah gelas pelastik jatuh dan menimpa sendok itu---menjebak para alien di dalamnya."
         b "Hampir saja! Siapakah atau apakah yang melakukan itu?"
         b "Grafik menunjukkan bahwa dalam 12 jam, alien akan setinggi 350 cm!"
@@ -1574,6 +1693,7 @@ label start:
         with fade
 
         b "Pintu ruang pengunci udara membuka, kalian segera masuk ke dalam"
+        play sound "sounds/door.mp3" fadeout 1.0 fadein 1.0
         b "Pintu luar pun menutup."
         b "Di dalam, kalian menekan tombol \"OPERASIKAN\", Namun tidak ada yang terjadi."
         b "Ruang pengunci udara seharusnya dipenuhi udara sehingga kalian bisa melepas helm."
@@ -1583,6 +1703,7 @@ label start:
         b "Sebuah virus telah merusak sistem pengaturannya."
         b "Kalian melihat empat kombinasi..."
         b "DATA PAD kalian memperlihatkan sebuah pesan..."
+        play sound "sounds/pad.mp3" fadeout 1.0 fadein 1.0
 
         "\"Pilih kombinasi yang paling mungkin terjadi agar pintu terbuka.\""
         "\"Hati-hati, pilihan yang salah bisa mengakibatkan kerusakan yang lebih besar.\""
@@ -1625,6 +1746,7 @@ label start:
 
         b "Dengan hati-hati kalian mengambil sedikit sampel tanah"
         b "Kalian menggunakan sebuah sendok panjang."
+        play sound "sounds/grab.mp3" fadeout 1.0 fadein 1.0
         b "Kalian benar. Tanah ini dipenuhi oleh cacing!"
         b "Akan tetapi, itu bukan cacing biasa!"
         b "Tubuh mereka berlendir, tapi kepala mereka mekanis, dengan gigi tajam yang mampu mengunyah!"
