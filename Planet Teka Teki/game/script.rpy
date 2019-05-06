@@ -34,7 +34,6 @@ label start:
 
     scene background
     with fade
-
     show star32
 
     "\"Selamat datang di Planet Teka-Teki\""
@@ -86,7 +85,7 @@ label start:
         b "Kalian melangkah masuk ke Kubah Laboratorium. Semua berantakan. Lampu peringatan berkedip dan semua peralatan sudah hancur."
         b "Labu kimia mendidih dan tabung percobaan pecah."
         b "Pintu menuju reaktor nuklir terbuka dan berayun tak beraturan. Monitor komputer dipenuhi dengan simbol dan tanda-tanda aneh."
-
+        scene background
         show roket4
         with fade
         b "Kemudian kalian menemukan sebuah pesan di papan tulis..."
@@ -96,6 +95,7 @@ label start:
 
     label planet4:
 
+        scene background
         show planet4
         with fade
 
@@ -108,6 +108,7 @@ label start:
 
     label star5:
 
+        scene background
         show star5
         with fade
 
@@ -146,6 +147,7 @@ label start:
 
     label planet6:
 
+        scene background
         show planet6
         with fade
 
@@ -177,6 +179,7 @@ label start:
     label ion7:
 
         b "Kalian mencentang kotak BESAR. DATA PAD kalain mulai terasa panas. Asap muncul  dari balik tombol-tombolnya! Sebuah pesan muncul di layar!"
+        scene background
         show ion7
         with fade
         "\"GAGAL MENGOLAH DATA! GAGAL MENGOLAH DATA!\""
@@ -189,6 +192,7 @@ label start:
 
     label moon7:
 
+        scene background
         show bulan7
         with fade
 
@@ -228,6 +232,7 @@ label start:
 
         b "Kalian melangkah melewati pengunci udara, menuju ke Kubah Habitat dan melihat kerusakan yang terjadi."
         b "Tampaknya, sesuatu telah memakan meja dan kursi."
+        scene background
         show planet8
         with fade
         b "Kalian menggunakan pensil khusus untuk membuat turus di DATA PAD kalian."
@@ -243,6 +248,7 @@ label start:
 
     label star8:
 
+        scene background
         show star8
         with fade
 
@@ -265,6 +271,7 @@ label start:
         b "Kalian memprogram DATA PAD untuk menerjemahkan simbol-simbol itu."
         b "Tabel terjemahan yang dihasilkan adalah sebagai berikut..."
 
+        scene background
         show ion9
         with fade
 
@@ -284,6 +291,7 @@ label start:
 
     label roket10:
 
+        scene background
         show roket10
         with fade
 
@@ -296,6 +304,7 @@ label start:
 
     label planet10:
 
+        scene background
         show planet10
         with fade
 
@@ -331,6 +340,7 @@ label start:
         play music "sounds/space chill.mp3" fadeout 1.0 fadein 1.0
 
         b "Pesawat antariksa kalian berhasil mendarat di area landasan. Denah di layar komputer memperlihatkan tampilan pangkalan."
+        scene background
         show bulan11
         with fade
         b "Lampu darurat berwarna merah berkedip-kedip di sebelah Kubah Habitat, Kubah Laboratorium, dan Kubah Komunkasi."
@@ -351,6 +361,7 @@ label start:
 
     label roket12:
 
+        scene background
         show roket12
         with fade
 
@@ -368,6 +379,7 @@ label start:
 
     label planet12:
 
+        scene background
         show planet12
         with fade
 
@@ -390,6 +402,7 @@ label start:
 
     label ion13:
 
+        scene background
         show ion13
         with fade
 
@@ -407,6 +420,7 @@ label start:
 
     label moon13:
 
+        scene background
         show bulan13
         with fade
 
@@ -429,6 +443,7 @@ label start:
 
     label roket14:
 
+        scene background
         show roket14
         with fade
 
@@ -447,6 +462,7 @@ label start:
 
     label planet14:
 
+        scene background
         show planet14
         with fade
 
@@ -491,6 +507,7 @@ label start:
 
     label moon15:
 
+        scene background
         show bulan15
         with fade
 
@@ -510,6 +527,7 @@ label start:
 
     label roket16:
 
+        scene background
         show roket16
         with fade
 
@@ -544,6 +562,7 @@ label start:
         b "Beberapa jenis logam dapat tertarik oleh magnet! Kalian mencari di DATA PAD lebih banyak informasi tentang magnet dan logam."
         b "Kalian menemukan data yang disajikan dalam bentuk diagram VENN."
 
+        scene background
         show star17
         with fade
 
@@ -563,6 +582,7 @@ label start:
 
     label ion17:
 
+        scene background
         show ion17
         with fade
 
@@ -577,6 +597,7 @@ label start:
 
     label roket18:
 
+        scene background
         show roket18
         with fade
 
@@ -617,6 +638,7 @@ label start:
 
     label star19:
 
+        scene background
         show star19
         with fade
 
@@ -659,6 +681,7 @@ label start:
 
     label roket19:
 
+        scene background
         show roket19
         with fade
 
@@ -689,6 +712,7 @@ label start:
         b "Kalian menuliskan \"Virus Alien\" pada program pencari di DATA PAD."
         b "Setelah beberapa saat, inilah yang ditampilkan di layar."
 
+        scene background
         show roket20
         with fade
 
@@ -706,6 +730,7 @@ label start:
 
     label planet20:
 
+        scene background
         show planet20
         with fade
 
@@ -728,6 +753,7 @@ label start:
         b "Data itu terlihat seperti bahasa yang tidak karuan dan tidak bermakna."
         b "Kemudian, kalian menjalankan program penerjemah."
 
+        scene background
         show star21
         with fade
 
@@ -747,6 +773,7 @@ label start:
 
     label roket22:
 
+        scene background
         show roke22
         with fade
 
@@ -776,6 +803,7 @@ label start:
         b "Brankas itu tidak terbuat dari logam, jadi para alien tidak bisa merusaknya."
         b "Kalian membaca keterangan tambahan dari Amy di DATA PAD..."
 
+        scene background
         show planet22
         with fade
 
@@ -792,6 +820,7 @@ label start:
 
     label star23:
 
+        scene background
         show star23
         with fade
 
@@ -808,6 +837,7 @@ label start:
         b "DATA PAD kalian segera membuat panggilan."
         b "DATA PAD Vineeta menjawab."
         b "Awalnya, kalian melihat ruang Kubah Laboratorium di layar DATA PAD, tapi kemudian sebuah pola alien aneh muncul di layar dan pola itu mulai berputar."
+        scene background
         show ion23
         with fade
         b "Kalian merasa pusing. Kalian juga juga tidak bisa berhenti melihatnya."
@@ -848,6 +878,7 @@ label start:
         b "Kalian mendekatkan lensa ke salah satu sendok yang rusak."
         b "Inilah yang kalian lihat..."
 
+        scene background
         show roket26
         with fade
 
@@ -857,8 +888,6 @@ label start:
         b "Itu adalah robot alien---seperti mainan."
         b "Robot-robot itu memotong-motong logam dan menempelkannya ke tubuh mereka."
         b "Kalian harus memperhatikan secara seksama, robot-robot itu tampak membesar di hadapan mata kalian."
-
-        #show robot membesar
 
         b "Kalian memprogram DATA PAD untuk membuat diagram garis yang akan menganalisis tingkat pertumbuhan robot alien itu."
         b "DATA PAD meminta kalian untuk memasukkan ukuran alien itu setelah 12 jam."
@@ -874,6 +903,7 @@ label start:
     label planet27:
         play music "sounds/space chill.mp3" fadeout 1.0 fadein 1.0
 
+        scene background
         show planet27
         with fade
 
@@ -904,6 +934,7 @@ label start:
 
     label star27:
 
+        scene background
         show star27
         with fade
 
@@ -929,6 +960,7 @@ label start:
         b "Kalian menyortir data tersebut berdasarkan warna, ukuran, dan bahan."
         b "Sekarang kalian memiliki dua buah tabel hasil penyortiran di DATA PAD."
 
+        scene background
         show roket28
         with fade
 
@@ -959,14 +991,13 @@ label start:
         b "Sekarang tempat itu kosong, dingin, dan hampa udara."
         b "Kalian melihat layar DATA PAD yang kalian bawa."
 
+        scene background
         show star29
         with fade
 
         b "Disitu ditampilkan tabel awak Pangkalan Alpha."
         b "Kalian dapat menghubungi DATA PAD mereka dengan cara mengetuk tanda di sebelah kiri nama mereka."
         b "Kalian mencoba untuk menghubungi komandan stasiun."
-
-        #show daftar tabel awak
 
         b "Kontak awak mana yang akan kalian panggil?"
 
@@ -979,6 +1010,7 @@ label start:
 
     label ion29:
 
+        scene background
         show ion29
         with fade
 
@@ -1001,6 +1033,7 @@ label start:
 
         b "DATA PAD kalian memperlihatkan data frekuensi dalam bentuk diagram batang."
 
+        scene background
         show roket30
         with fade
 
@@ -1019,6 +1052,7 @@ label start:
 
     label planet30:
 
+        scene background
         show planet30
         with fade
 
@@ -1037,6 +1071,7 @@ label start:
 
     label star31:
 
+        scene background
         show star31
         with fade
 
@@ -1071,6 +1106,7 @@ label start:
 
         #CHECKPOINT
 
+        scene background
         show roket32
         with fade
 
@@ -1115,6 +1151,7 @@ label start:
 
     label star32:
 
+        scene background
         show star32
         with fade
 
@@ -1144,6 +1181,7 @@ label start:
         b "Bersama-sama, kalian memutuskan menggunakan teleskop pangkalan untuk mencari planet yang diduga paling kuat sebagai planet Zorgon di sistem tata surya."
         b "Komputer menganalisis sepuluh sistem tata surya terdekat dari data teleskop."
 
+        scene background
         show bulan33
         with fade
 
@@ -1170,8 +1208,9 @@ label start:
 
     label planet34:
 
-         show planet34
-         with fade
+        scene background
+        show planet34
+        with fade
 
         b "Kalian pikir suhunya hanya 4,5 derajat Celcius."
         b "Kalian lalu menyalakan pemanas di dalam pakaian antariksa kalian."
@@ -1192,6 +1231,7 @@ label start:
 
         #CHECKPOINT
 
+        scene background
         show star34
         with fade
 
@@ -1213,6 +1253,7 @@ label start:
 
     label ion35:
 
+        scene background
         show ion35
         with fade
 
@@ -1253,6 +1294,7 @@ label start:
 
     label star36:
 
+        scene background
         show star36
         with fade
 
@@ -1267,6 +1309,7 @@ label start:
 
     label planet36:
 
+        scene background
         show planet36
         with fade
 
@@ -1280,6 +1323,7 @@ label start:
 
     label ion37:
 
+        scene background
         show ion37
         with fade
 
@@ -1314,6 +1358,7 @@ label start:
 
     label moon37:
 
+        scene background
         show bulan37
         with fade
 
@@ -1351,6 +1396,7 @@ label start:
 
     label star38:
 
+        scene background
         show star38
         with fade
 
@@ -1369,6 +1415,7 @@ label start:
 
     label roket38:
 
+        scene background
         show roket38
         with fade
 
@@ -1397,6 +1444,7 @@ label start:
         b " Kalian menggunakan perekam video DATA PAD untuk merekam pertumbuhan sebuah tomat."
         b "Kalian memutarnya kembali dan inilah hasilnya..."
 
+        scene background
         show ion39
         with fade
 
@@ -1411,6 +1459,7 @@ label start:
 
     label moon39:
 
+        scene background
         show bulan39
         with fade
 
@@ -1427,6 +1476,7 @@ label start:
 
     label roket40:
 
+        scene background
         show roket40
         with fade
 
@@ -1445,6 +1495,7 @@ label start:
 
     label planet40:
 
+        scene background
         show planet40
         with fade
 
@@ -1477,6 +1528,7 @@ label start:
 
     label moon41:
 
+        scene background
         show bulan41
         with fade
 
@@ -1494,6 +1546,7 @@ label start:
 
     label ion41:
 
+        scene background
         show ion41
         with fade
 
@@ -1516,6 +1569,7 @@ label start:
 
     label roket42:
 
+        scene background
         show roket42
         with fade
 
@@ -1544,6 +1598,7 @@ label start:
 
     label planet42:
 
+        scene background
         show planet42
         with fade
 
@@ -1564,6 +1619,7 @@ label start:
 
     label ion43:
 
+        scene background
         show ion43
         with fade
 
@@ -1580,6 +1636,7 @@ label start:
     label star43:
         play music "sounds/space chill.mp3" fadeout 1.0 fadein 1.0
 
+        scene background
         show star43
         with fade
 
@@ -1601,6 +1658,7 @@ label start:
 
         #"END GAME"
 
+        scene background
         show ending
         with fade
 
